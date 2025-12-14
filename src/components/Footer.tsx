@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -9,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-1 mb-4">
+            <a href="/" className="flex items-center gap-1 mb-4">
               <span className="text-2xl font-serif font-bold text-secondary-foreground">
                 Law
               </span>
@@ -28,7 +26,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-secondary-foreground/70 hover:text-primary transition-colors">
+                <a href="/" className="text-secondary-foreground/70 hover:text-primary transition-colors">
                   Home
                 </a>
               </li>
@@ -64,13 +62,13 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link 
-                  to="/terms" 
+                <a 
+                  href="/terms" 
                   className="text-secondary-foreground/70 hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <i className="fas fa-file-alt text-sm" />
                   Terms & Privacy
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
